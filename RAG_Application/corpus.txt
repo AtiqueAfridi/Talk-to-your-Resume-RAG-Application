@@ -1,0 +1,8 @@
+
+echo "Machine learning is a subset of artificial intelligence that focuses on developing algorithms that can learn from and make predictions on data.
+
+Artificial Intelligence (AI) refers to the simulation of human intelligence in machines programmed to think and learn like humans. AI encompasses various subfields including machine learning, neural networks, and natural language processing.
+
+Neural networks are computing systems inspired by biological neural networks in human brains. They consist of artificial neurons organized in layers that can recognize patterns in data.
+
+Deep learning is a subset of machine learning based on artificial neural networks. It uses multiple layers to progressively extract higher-level features from raw input." > corpus.txt

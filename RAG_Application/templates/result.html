@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG System - Query Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Query Result</h1>
+    <h2>Query: {{ query }}</h2>
+    <h3>Generated Answer:</h3>
+    <p>{{ answer }}</p>
+    
+    <h3>Retrieved Passages:</h3>
+    <ul>
+        {% for passage, score in passages %}
+        <li>
+            <strong>Score: {{ score | round(4) }}</strong><br>
+            {{ passage }}
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <a href="/">Back to Home</a>
+</body>
+</html>
